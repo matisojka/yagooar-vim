@@ -10,6 +10,8 @@ set hidden
 set expandtab
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *.hanldebars set filetype=html
+au BufRead,BufNewFile *.ino set filetype=cpp
+au BufRead,BufNewFile *.hamlc set filetype=haml
 autocmd BufWritePre * :%s/\s\+$//e
 set ruler
 set rulerformat=%l,%c%V%=%P
@@ -17,6 +19,8 @@ set laststatus=2
 
 set wildmenu
 set wildmode=list:longest,list:full
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*./git/*
 
 set sw=2 " no of spaces for indenting
 set ts=2 " show \t as 2 spaces and treat 2 spaces as \t when deleting, etc..
@@ -53,6 +57,7 @@ map <leader>v :vs<cr>
 
 " NerdTREE
 nmap <leader>t :NERDTreeToggle<cr>
+nmap <leader>f :NERDTreeFind<cr>
 
 " Abbreviations
 ab bpry binding.pry
