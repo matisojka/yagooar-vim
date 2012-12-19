@@ -27,11 +27,6 @@ set ts=2 " show \t as 2 spaces and treat 2 spaces as \t when deleting, etc..
 
 colorscheme jellybeans
 
-" Gist plugin
-let g:gist_clip_command = 'pbcopy'
-let g:gist_detect_filetype = 1
-let g:gist_private = 1
-
 " Ragtag
 inoremap <M-o>       <Esc>o
 inoremap <C-j>       <Down>
