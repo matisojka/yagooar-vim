@@ -4,6 +4,8 @@ filetype on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
 syntax on
 
+" set clipboard=unnamed
+
 set number
 call pathogen#infect()
 filetype plugin indent on
@@ -27,6 +29,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*./git/*
 set sw=2 " no of spaces for indenting
 set ts=2 " show \t as 2 spaces and treat 2 spaces as \t when deleting, etc..
 
+let g:jellybeans_use_lowcolor_black = 0
 colorscheme jellybeans
 
 " Ragtag
