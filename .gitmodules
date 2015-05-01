@@ -28,3 +28,9 @@
 [submodule "bundle/vim-yaml"]
 	path = bundle/vim-yaml
 	url = https://github.com/avakhov/vim-yaml.git
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = git://github.com/mustache/vim-mustache-handlebars.git
+[submodule "bundle/rust.vim"]
+	path = bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
